@@ -1,0 +1,85 @@
+header,
+nav,
+section,
+article,
+footer {
+    border: 5px dashed pink;
+}
+body
+{
+    background:url(../images/lilakep.png) ;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: plum;
+}
+
+nav {
+    width: 10%;
+    min-width: 200px;
+    height: 1100px;
+    float: left;
+    margin: 0 30px 0 30px;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+#banner-content {
+    text-align: center;
+}
+
+#banner-content a 
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#banner-conent a:hover 
+{
+    text-decoration: underline;
+    color: peru;
+}
+#logo
+{
+    float: left;
+    width: 210px;
+    height: 170px;
+    margin: 5px 0 5px 10px;
+}
+#menu
+{
+    
+}
+section {
+    width: 89%;
+    height: 1100px;
+    max-width: 880px;
+    float: left;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+article {
+    width: 96%;
+    max-width: 700px;
+    height: 950px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    float: left;
+    margin: 10px 0 20px 0;
+
+}
+
+.container {
+    width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
