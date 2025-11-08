@@ -1,20 +1,27 @@
+body {
+    background: url(../images/tile.png);
+    font-family: monospace;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
 header,
 nav,
 section,
 article,
 footer {
-    border: 5px dashed pink;
-}
-body
-{
-    background:url(../images/lilakep.png) ;
+    border: 2px dashed rgb(255, 0, 179);
+    border-radius: 10px;
 }
 
 header {
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
-    background-color: plum;
+    background-color: rgba(250, 185, 252, 0.952);
 }
 
 nav {
@@ -22,8 +29,13 @@ nav {
     min-width: 200px;
     height: 1100px;
     float: left;
-    margin: 0 30px 0 30px;
-    background-color:rgba(255, 255, 255, 0.5);
+    margin: 0px 30px 0px 30px;
+    background-color: rgba(250, 185, 252, 0.75);
+}
+
+#menu {
+    list-style-type: none;
+    padding-left: 0px;
 }
 
 #banner-content {
@@ -31,29 +43,29 @@ nav {
     margin-top: 50px;
 }
 
-#banner-content a 
-{
+#banner-content a {
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(210, 23, 157);
 }
-#banner-conent a:hover 
-{
+
+#banner-content a:hover {
     text-decoration: underline;
-    color: peru;
+    color: rgb(255, 22, 135);
 }
-#logo
-{
-    float: left;
+
+#logo {
     width: 210px;
     height: 170px;
-    margin: 5px 0 5px 10px;
+    float: left;
+    margin: 5px 0px 5px 10px;
 }
+
 section {
     width: 89%;
     height: 1100px;
-    max-width: 880px;
+    max-width: 800px;
     float: left;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color: rgba(250, 185, 252, 0.75);
 }
 
 article {
@@ -63,21 +75,35 @@ article {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    background-color:rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 22, 135, 0.751);
     text-align: justify;
     line-height: 1.5em;
     padding: 20px;
-    font-family: 'Arial', 'Helvetica', sans-serif;
     overflow: auto;
-    color: mediumvioletred;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article p {
+    color: rgb(224, 224, 224);
+}
+
+article img {
+    float: left;
+    margin-right: 20px;
 }
 
 footer {
     width: 100%;
     height: 100px;
     float: left;
-    margin: 10px 0 20px 0;
+    margin: 10px 0px 20px 0px;
+    background-color: rgb(250, 185, 252, 0.75);
+}
 
+footer p {
+    text-align: center;
+    font-size: large;
+    margin: 0 0 0 10px;
 }
 
 .container {
@@ -86,46 +112,33 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-#menu li
-{
-    list-style-type:none;
 
+#menu li {
+    list-style-type: none;
 }
-#menu ul li a
-{
+
+#menu ul li a {
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     padding: 3px;
     display: block;
     text-align: center;
-    background-color: #ccc;
-
+    background-color: rgb(86, 7, 102);
 }
-#menu ul li a:hover
-{
-    background-color: peru;
-    color: white;
-}#menu ul ul a
-{
+
+#menu ul li a:hover {
+    background-color: rgb(255, 0, 234);
+    color: rgb(255, 255, 255);
+}
+
+#menu ul ul a {
     position: relative;
     bottom: 20px;
     left: 100%;
     display: none;
 }
-menu ul li:hover > ul a
-{
+
+#menu ul li:hover>ul a {
     display: block;
-}
-article img
-{
-    float: left;
-    margin-right: 20px;
-    border: 2px solid mediumvioletred;
-    border-radius: 10px;
-}
-h2
-{
-    text-align: center;
-    color: limegreen;
 }
