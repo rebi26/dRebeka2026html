@@ -1,0 +1,60 @@
+/*felugro ürlapstílus beállításai*/
+.form-popup
+{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    display: none;
+}
+
+.open-button
+{
+    background-color: #970cb6;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 28px;
+    width: 280px;
+}
+
+/*ürlap formázása*/
+.form-container
+{
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/*AZ imput mezők szélességeinek a beállítása*/
+.form-container input[type=text], .form-container input[type=password]
+{
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus,
+.form-container input[type=text]:hover,
+.form-container input[type=password]:hover
+{
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn
+{
+    background-color: #4c35bf;
+    color: rgb(255, 255, 252);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
