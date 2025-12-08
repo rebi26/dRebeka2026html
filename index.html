@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
     <title>11a2 HTML project 2026</title>
 </head>
 
@@ -12,7 +21,7 @@
     <header>
         <div id="logo">
             <a href="index.html">
-                <img src="images/premo-logo.png" alt="Premo logo" width="100" title="Premo logo">
+                <img src="images/premo-logo.png" alt="Premo logo" width="180" title="Premo logo">
             </a>
         </div>
         <div id="banner-content">
@@ -44,7 +53,8 @@
             <h2>&#60;section&#62;</h2>
             <article>
                 <h2>&#60;article&#62;</h2>
-                <img src="images/html.png" alt="HTML5 CSS3 JavaScript logo" title="HTML5 CSS3 JavaScript logo" width="150px">
+                <img src="images/html.png" alt="HTML5 CSS3 JavaScript logo" title="HTML5 CSS3 JavaScript logo"
+                    width="150px">
                 <p>
                     Lórum ipse ságos rácikát jegyel: a sajtha hüves fohoklyó, mellés gyászaj ez. A verces rénzések
                     tröccse után vivő üregést kell rodnia. A dült fákum és sítések csüggedves leglyettjévé polyázják a
@@ -141,9 +151,22 @@
             </article>
         </section>
     </div>
-    <footer><h2>&#60;footer&#62;</h2><br>
-    <p>&#169; 2025/26 Duma Rebeka Delila | All rights reserved</p>
-</footer>
+    <footer>
+        <h2>&#60;footer&#62;</h2><br>
+        <p>&#169; 2025/26 Duma Rebeka Delila | All rights reserved</p>
+    </footer>
+    <button class="open-button" onclick="openForm()">Open form</button>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Login</h1>
+            <label for="">Email</label>
+            <input type="text" name="email" placeholder="Enter email">
+            <label for="">Password</label>
+            <input type="Password" name="psw" placeholder="Enter password..">
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn" onclick="closeForm()">Close</button>
+        </form>
+    </div>
 </body>
 
 </html>
